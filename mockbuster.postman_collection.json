@@ -1,0 +1,77 @@
+{
+	"variables": [],
+	"info": {
+		"name": "mockbuster",
+		"_postman_id": "667acf7d-3234-f598-5918-0139ac432a7e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "films",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/films?title=ace",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"films"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "ace",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "film",
+			"request": {
+				"url": "http://localhost:8080/film/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "film comments",
+			"request": {
+				"url": "http://localhost:8080/film/1/comments",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "film comment",
+			"request": {
+				"url": "http://localhost:8080/film/1/comment",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"customerId\": 1,\n\t\"text\": \"test text\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
